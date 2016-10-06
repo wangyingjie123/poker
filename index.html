@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<style>
+     body{
+          background: #000;
+     }
+     .scene{
+     	width: 1000px;
+     	height: 600px;
+     	border:1px solid #000;
+          background: url(img/beijing.jpg) center center no-repeat;
+     	position: absolute;
+          border-radius: 30px;
+     	left: 0;
+     	right: 0;
+     	top:0;
+     	bottom: 0;
+     	margin: auto;
+     }
+     .pai{
+     	width: 120px;
+     	height: 168px;
+     	background-size: 100%;
+     	/*border: 1px solid #000;*/
+          position: absolute;
+          top:200px;
+          left: 300px;
+          box-shadow: 0 0 2px black;
+          border-radius: 5px;
+     	float: left;
+          opacity: 0;
+     }
+     .scene .move-left,.scene .move-right{
+          width: 160px;
+          height: 40px;
+          position:absolute;
+          top:490px;
+          left:50%;
+          margin-left: -80px;
+          /*background:#760d0a;*/
+          background: url(img/anniu.jpg) center center no-repeat;
+          cursor: pointer;
+          color: #fff;
+          font-family: "黑体";
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 10px;
+     }
+     .scene .move-left{
+          top:540px;
+     }
+	</style>
+</head>
+<body>
+	 <div class="scene">
+           <div class="move-left"><</div>
+           <div class="move-right">></div>    
+
+      </div>
+</body>
+</html>
