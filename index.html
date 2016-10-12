@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>扑克牌</title>
 	<script src="js/jquery.js"></script>
 	<script src="js/index.js"></script>
 	<style>
@@ -52,17 +52,82 @@
           line-height: 40px;
           text-align: center;
           border-radius: 10px;
+          display: none;
      }
      .scene .move-left{
           top:540px;
      }
+     .scene .move-left:hover{
+          color: burlywood;
+          font-size: 30px;
+          text-shadow: 0 0 .1em, 0 0 .3em;
+     }
+      .scene .move-right:hover{
+          color: burlywood;
+          font-size: 30px;
+          text-shadow: 0 0 .1em, 0 0 .3em;
+      }
+      .button{
+          position:relative;
+          top:200px;
+          left: 10px;
+      }
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 20px 60px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-2 {
+          background: #760d0a;
+          color: #fff;
+          box-shadow: 0 6px #ab3c3c;
+          -webkit-transition: none;
+          -moz-transition: none;
+          transition: none;
+}
+.btn-2h {
+    border-radius: 20px;
+}
+.btn-2h:hover {
+    box-shadow: 0 4px #ab3c3c;
+    top: 2px;
+}
+.btn-2h:active {
+    box-shadow: 0 0 #ab3c3c;
+    top: 6px;
+}
 	</style>
 </head>
 <body>
 	 <div class="scene">
-           <div class="move-left"><</div>
-           <div class="move-right">></div>    
-
+           <div class="move-left"><<</div>
+           <div class="move-right">>></div>    
       </div>
+      <p class="button">
+           <button class="btn btn-2 btn-2h">开始游戏</button>
+      </p>
 </body>
 </html>

@@ -58,7 +58,16 @@
                 .delay(index*30).animate({top:420,left:245,opacity:1},500)
   	}
   }
-    setPoker(makePoker());
+   //点击开始
+   var flag=true;
+   $('.btn').click(function(){
+    if(flag){
+      setPoker(makePoker());
+      $('.move-left').delay(500).fadeIn();
+      $('.move-right').delay(500).fadeIn();
+      flag=!flag;
+    }
+   })
     //右移
       var zIndex=1;
     var moveright=$('.scene .move-right');
